@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grover</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: '#F55253',
+              primaryColorLight: '#FDECEC',
+            },
+            container: {
+              padding: '4rem',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="container mx-auto">
+    <header>
+      <nav class="grid grid-cols-3 gap-4 py-6">
+        <div>
+          <img class="w-36" src="img/logo.png" alt="" />
+        </div>
+        <div class="my-auto">
+          <ul class="flex">
+            <li class="mx-4 text-primaryColor">
+              <a class="font-medium text-base hover:text-primaryColor" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="mx-4">
+              <a class="font-medium text-base hover:text-primaryColor" href="#"
+                >Menu</a
+              >
+            </li>
+            <li class="mx-4">
+              <a class="font-medium text-base hover:text-primaryColor" href="#"
+                >Service</a
+              >
+            </li>
+            <li class="mx-4">
+              <a class="font-medium text-base hover:text-primaryColor" href="#"
+                >Shop</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="my-auto shadow-md p-3 rounded-md mx-7">
+          <form>
+            <div class="flex gap-2">
+              <img class="w-4 my-auto" src="img/icon/search.png" alt="" />
+              <input
+                class="w-full text-sm placeholder:text-zinc-900 placeholder:font-medium focus:outline-none mr-3"
+                type="text"
+                placeholder="search"
+              />
+              <img class="ml-auto" src="img/icon/cart.png" alt="" />
+            </div>
+          </form>
+        </div>
+      </nav>
+      <section>
+        <div class="grid grid-cols-2 mt-18">
+          <div class="mt-10">
+            <div class="bg-primaryColorLight inline-block rounded-3xl">
+              <p class="text-primaryColor py-2 px-3 font-medium text-base">
+                More than Faster
+              </p>
+            </div>
+            <h1 class="text-7xl font-semibold mt-5">
+              Groceries delivered in as little as
+              <span class="text-primaryColor">2 hours</span>
+            </h1>
+            <p class="text-lg mt-5 text-zinc-700">
+              Grocen atssures fresh grocery every morning to your family without
+              getting out in this pandemic.
+            </p>
+
+            <div class="mt-16 flex items-center">
+              <button class="bg-primaryColor text-white py-3 px-6 rounded-xl">
+                Order Now
+              </button>
+              <div class="ml-8 flex items-center ">
+                <div class=" rounded-full shadow-xl ">
+                  <img class="m-auto p-5" src="img/icon/play.png" alt="" />
+                </div>
+                <p class="text-xl ml-3">Order Process</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-auto h-fit object-cover m-auto img-1"
+              src="img/img-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
