@@ -13,6 +13,7 @@
             colors: {
               primaryColor: '#F55253',
               primaryColorLight: '#FDECEC',
+              bgColor: '#FEF5F5',
             },
             container: {
               padding: '4rem',
@@ -23,8 +24,10 @@
     </script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="container mx-auto">
-    <header>
+  <body class="mx-auto">
+    <!-- header section -->
+    <header class="container">
+      <!-- nav section -->
       <nav class="grid grid-cols-3 gap-4 py-6">
         <div>
           <img class="w-36" src="img/logo.png" alt="" />
@@ -88,8 +91,8 @@
               <button class="bg-primaryColor text-white py-3 px-6 rounded-xl">
                 Order Now
               </button>
-              <div class="ml-8 flex items-center ">
-                <div class=" rounded-full shadow-xl ">
+              <div class="ml-8 flex items-center">
+                <div class="rounded-full shadow-xl">
                   <img class="m-auto p-5" src="img/icon/play.png" alt="" />
                 </div>
                 <p class="text-xl ml-3">Order Process</p>
@@ -106,5 +109,67 @@
         </div>
       </section>
     </header>
+
+    <!-- serve section -->
+    <section class="bg-bgColor p-24">
+      <div class="container text-center">
+        <h4 class="text-primaryColor text-lg font-medium">What we Serve</h4>
+        <h2 class="text-4xl font-bold">
+          fruit and vegetable delivered to your home
+        </h2>
+        <div class="mt-20 grid grid-cols-3 gap-12">
+          <div
+            class="bg-white py-12 px-7 rounded-xl hover:rotate-6 duration-500 hover:shadow-primaryColor hover:shadow-xl text-center"
+          >
+            <img src="img/icon/icon-1.png" class="w-auto m-auto" alt="" />
+            <h4 class="text-xl font-semibold">Free shipping</h4>
+            <p class="font-normal text-sm mt-3">
+              Enjoy Order in a hand using the freshness of groceries
+            </p>
+          </div>
+          <div
+            class="bg-white py-12 px-7 rounded-xl rotate-6 duration-500 shadow-primaryColor shadow-xl text-center"
+          >
+            <img src="img/icon/icon-2.png" class="w-auto m-auto" alt="" />
+            <h4 class="text-xl font-semibold">15 days returns</h4>
+            <p class="font-normal text-sm mt-3">
+              Order in a handy way using the freshness of the groceries.
+            </p>
+          </div>
+          <div
+            class="bg-white py-12 px-7 rounded-xl hover:rotate-6 duration-500 hover:shadow-primaryColor hover:shadow-xl text-center"
+          >
+            <img src="img/icon/icon-3.png" class="w-auto m-auto" alt="" />
+            <h4 class="text-xl font-semibold">Secure checkout</h4>
+            <p class="font-normal text-sm mt-3 text-">
+              If you get rotten items - return immediately to us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- choose us  -->
+    <section class="py-31">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center">
+          <div>
+            <img class="img-2 mx-auto" src="img/img-2.png" alt="" />
+          </div>
+          <div class="flex-grow">
+            <h4 class="text-green-600 font-medium">WHY CHOOSE US</h4>
+            <h2 class="font-bold text-4xl mt-2">
+              Find Favorites and Discover New Ones
+            </h2>
+            <p class="mt-5 font-normal text-lg text-gray-700">
+              At vero eos et accusamus et iusto odio dignissimos ducimus
+              blanditiis praesen voluptatum deleniti.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   </body>
 </html>

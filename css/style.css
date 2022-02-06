@@ -5,7 +5,9 @@ body{
     sans-serif !important;
 }
 
-.img-1{
+.img-1,
+.img-2{
     object-fit: cover;
     height: 450px;
 }
+
