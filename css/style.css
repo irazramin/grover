@@ -6,7 +6,8 @@ body{
 }
 
 .img-1,
-.img-2{
+.img-2,
+.img-3{
     object-fit: cover;
     height: 450px;
 }
