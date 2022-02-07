@@ -9,6 +9,9 @@ body{
 .img-2,
 .img-3{
     object-fit: cover;
-    height: 450px;
+    height: 400px;
 }
 
+.down-btn{
+    width: 200px;
+}

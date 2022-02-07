@@ -26,37 +26,37 @@
   </head>
   <body class="mx-auto">
     <!-- header section -->
-    <header class="container">
+    <header class="container mb-16">
       <!-- nav section -->
-      <nav class="grid grid-cols-3 gap-4 py-6">
+      <nav class="grid md:grid-cols-1 lg:grid-cols-3 gap-4 py-6 md:w-full">
         <div>
-          <img class="w-36" src="img/logo.png" alt="" />
+          <img class="w-36 md:mx-auto lg:mx-0" src="img/logo.png" alt="" />
         </div>
-        <div class="my-auto">
+        <div class="my-auto hidden md:block md:mx-auto">
           <ul class="flex">
-            <li class="mx-4 text-primaryColor">
+            <li class="lg:mx-4 md:mx-10 text-primaryColor">
               <a class="font-medium text-base hover:text-primaryColor" href="#"
                 >Home</a
               >
             </li>
-            <li class="mx-4">
+            <li class="lg:mx-4 md:mx-10">
               <a class="font-medium text-base hover:text-primaryColor" href="#"
                 >Menu</a
               >
             </li>
-            <li class="mx-4">
+            <li class="lg:mx-4 md:mx-10">
               <a class="font-medium text-base hover:text-primaryColor" href="#"
                 >Service</a
               >
             </li>
-            <li class="mx-4">
+            <li class="lg:mx-4 md:mx-10">
               <a class="font-medium text-base hover:text-primaryColor" href="#"
                 >Shop</a
               >
             </li>
           </ul>
         </div>
-        <div class="my-auto shadow-md p-3 rounded-md mx-7">
+        <div class="my-auto shadow-md p-3 rounded-md mx-7 lg:block hidden">
           <form>
             <div class="flex gap-2">
               <img class="w-4 my-auto" src="img/icon/search.png" alt="" />
@@ -70,38 +70,41 @@
           </form>
         </div>
       </nav>
-      <section>
-        <div class="grid grid-cols-2 mt-18">
-          <div class="mt-10">
+      <section class="mx-auto w-full">
+        <div class="grid lg:grid-cols-2 mt-18">
+          <div class="mt-10 order-last">
             <div class="bg-primaryColorLight inline-block rounded-3xl">
               <p class="text-primaryColor py-2 px-3 font-medium text-base">
                 More than Faster
               </p>
             </div>
-            <h1 class="text-7xl font-semibold mt-5">
+            <h1 class="text-2xl lg:text-7xl font-semibold mt-5">
               Groceries delivered in as little as
               <span class="text-primaryColor">2 hours</span>
             </h1>
-            <p class="text-lg mt-5 text-zinc-700">
+            <p class="text-base md:text-lg mt-5 text-zinc-700">
               Grocen atssures fresh grocery every morning to your family without
               getting out in this pandemic.
             </p>
 
-            <div class="mt-16 flex items-center">
+            <div class="mt-16 flex items-center flex-col md:flex-row">
               <button
                 class="bg-primaryColor text-white py-3 px-6 rounded-xl border-2 border-primaryColor"
               >
                 Order Now
               </button>
-              <div class="ml-8 flex items-center">
-                <div class="rounded-full shadow-xl">
-                  <img class="m-auto p-5" src="img/icon/play.png" alt="" />
+              <div class="mt-9 md:mt-0 lg:ml-8 hidden lg:block">
+                <div class="flex items-center">
+                  <div class="rounded-full shadow-xl">
+                    <img class="m-auto p-5" src="img/icon/play.png" alt="" />
+                  </div>
+                  <p class="text-xl ml-3">Order Process</p>
+                  <div></div>
                 </div>
-                <p class="text-xl ml-3">Order Process</p>
               </div>
             </div>
           </div>
-          <div>
+          <div class="lg:order-last">
             <img
               class="w-auto h-fit object-cover m-auto img-1"
               src="img/img-1.png"
@@ -114,15 +117,19 @@
 
     <main>
       <!-- serve section -->
-      <section class="bg-bgColor p-24">
+      <section class="bg-bgColor md:p-24 py-7">
         <div class="container text-center">
-          <h4 class="text-primaryColor text-lg font-medium">What we Serve</h4>
-          <h2 class="text-4xl font-bold">
+          <h4 class="text-primaryColor md:text-lg font-medium">
+            What we Serve
+          </h4>
+          <h2 class="text-xl md:text-4xl font-bold w-full">
             fruit and vegetable delivered to your home
           </h2>
-          <div class="mt-20 grid grid-cols-3 gap-12">
+          <div
+            class="mt-20 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+          >
             <div
-              class="bg-white py-12 px-7 rounded-xl hover:rotate-6 duration-500 hover:shadow-primaryColor hover:shadow-xl text-center"
+              class="bg-white py-12 lg:px-7 rounded-xl hover:rotate-6 duration-500 hover:shadow-primaryColor hover:shadow-xl text-center"
             >
               <img src="img/icon/icon-1.png" class="w-auto m-auto" alt="" />
               <h4 class="text-xl font-semibold">Free shipping</h4>
@@ -154,14 +161,14 @@
 
       <!-- choose us  -->
       <section class="py-20">
-        <div class="container">
-          <div class="grid grid-cols-2 items-center">
+        <div class="px-5 md:px-0 md:container">
+          <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
             <div>
               <img class="img-2 mx-auto" src="img/img-2.png" alt="" />
             </div>
-            <div>
+            <div class="text-center md:text-left mt-8 md:mt-0">
               <h4 class="text-green-600 font-medium">WHY CHOOSE US</h4>
-              <h2 class="font-bold text-4xl mt-2">
+              <h2 class="font-bold text-2xl md:text-4xl mt-2">
                 Find Favorites and Discover New Ones
               </h2>
               <p class="mt-5 font-normal text-lg text-gray-700">
@@ -181,13 +188,15 @@
       <!-- home delivery -->
       <section class="py-20">
         <div class="container">
-          <div class="grid grid-cols-2 items-center">
-            <div>
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+            <div
+              class="order-last md:order-first mt-5 md:mt-0 text-center md:text-left"
+            >
               <h4 class="text-yellow-600 font-medium">HOME DELIVERY</h4>
-              <h2 class="font-bold text-4xl mt-2">
+              <h2 class="font-bold text-2xl md:text-4xl mt-2">
                 Find Favorites and Discover New Ones
               </h2>
-              <p class="mt-5 font-normal text-lg text-gray-700">
+              <p class="mt-5 font-normal text-base md:text-lg text-gray-700">
                 At vero eos et accusamus et iusto odio dignissimos ducimus
                 blanditiis praesen voluptatum deleniti.
               </p>
@@ -207,22 +216,22 @@
       <!-- download app -->
       <section class="py-20 bg-primaryColorLight">
         <div class="container">
-          <div class="grid grid-cols-2 items-center">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-2 items-center">
             <div>
               <img class="img-2 mx-auto" src="img/mobile mockup.png" alt="" />
             </div>
-            <div>
+            <div class="text-center md:text-left mt-4 md:my-0">
               <h4 class="text-primaryColor font-medium">Download our app</h4>
-              <h2 class="font-bold text-4xl mt-2">
+              <h2 class="font-bold text-2xl md:text-4xl mt-2">
                 Get the Groceries app order more easily.
               </h2>
-              <p class="mt-5 font-normal text-lg text-gray-700">
+              <p class="mt-5 font-normal text-base md:text-lg text-gray-700">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut.
               </p>
-              <div class="flex">
+              <div class="lg:flex">
                 <button
-                  class="bg-transparent text-gray-800 font-medium border-2 duration-300 hover:text-white hover:bg-black mt-12 py-3 px-6 rounded-xl mr-7"
+                  class="bg-transparent down-btn text-gray-800 font-medium border-2 duration-300 hover:text-white hover:bg-black mt-12 py-3 px-6 rounded-xl mr-7"
                 >
                   <span
                     ><img
@@ -233,11 +242,11 @@
                   Apple Store
                 </button>
                 <button
-                  class="bg-transparent text-gray-800 font-medium border-2 duration-300 hover:text-white hover:bg-black mt-12 py-3 px-6 rounded-xl mr-7"
+                  class="bg-transparent down-btn text-gray-800 font-medium border-2 duration-300 hover:text-white hover:bg-black mt-12 py-3 px-6 rounded-xl mr-7"
                 >
                   <span
                     ><img
-                      class="w-7 mr-3 inline-block"
+                      class="w-8 mr-3 inline-block"
                       src="img/icon/playstore.png"
                       alt=""
                   /></span>
@@ -252,10 +261,12 @@
 
     <!-- footer -->
     <footer class="mt-32 mb-7">
-      <div class="container">
-        <div class="grid grid-cols-4 gap-16">
+      <div class="container mr">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 text-center md:text-left xl:place-items-center md:place-items-start lg:grid-cols-4 md:gap-10 lg:gap-16"
+        >
           <div>
-            <img class="w-36" src="img/logo.png" alt="" />
+            <img class="w-36 mx-auto md:mx-0" src="img/logo.png" alt="" />
             <p class="font-normal text-base mt-6">
               Fast delivery, which is active all over the world, serves with
               many transportation vehicles.
@@ -293,11 +304,21 @@
           </div>
         </div>
         <hr class="mt-20" />
-        <div class="flex justify-between items-center mt-7">
-          <p class=" text-gray-400 text-base font-normal">All Rights Reserved @ BESNIK 2021</p>
-          <div class="flex">
-            <p class="mr-7 text-gray-400 text-base font-normal">Terms & Conditions</p>
-            <p class="mr-3 text-gray-400 text-base font-normal">Privacy & Policy</p>
+        <div
+          class="flex justify-between flex-col md:flex-row items-center mt-7"
+        >
+          <p class="text-gray-400 text-base font-normal">
+            All Rights Reserved @ BESNIK 2021
+          </p>
+          <div
+            class="flex flex-col md:flex-row mt-5 md:mt-0 text-center md:text-left"
+          >
+            <p class="mr-7 text-gray-400 text-base font-normal">
+              Terms & Conditions
+            </p>
+            <p class="mr-3 text-gray-400 text-base font-normal">
+              Privacy & Policy
+            </p>
           </div>
         </div>
       </div>
